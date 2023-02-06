@@ -4,6 +4,7 @@ import 'package:client_core/features/presentation/widgets/global_widgets/custom_
 import 'package:client_core/features/presentation/widgets/global_widgets/custom_text_form_field.dart';
 import 'package:client_core/features/presentation/widgets/home_widgets/bottom_nav_bar.dart';
 import 'package:client_core/features/presentation/widgets/home_widgets/categories.dart';
+import 'package:client_core/features/presentation/widgets/home_widgets/current_order.dart';
 import 'package:client_core/features/presentation/widgets/home_widgets/home_slider.dart';
 import 'package:client_core/features/presentation/widgets/home_widgets/last_order.dart';
 import 'package:client_core/features/presentation/widgets/home_widgets/most_booked_categories.dart';
@@ -67,6 +68,7 @@ class HomeScreen extends StatelessWidget {
                       child: Column(
                       children: const[
                         SearchWidget(),
+                        CurrentOrder(),
                         HomeSlider(),
                         HomeLastOrder(),
                         HomeCategories(),

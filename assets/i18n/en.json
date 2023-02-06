@@ -387,6 +387,9 @@
 		"couponـwrong": "Please re check the coupon (wrong)",
 		"coupon_activated": "Coupon Discount activated ✔"
 	},
+	"service": {
+		"book_now": "Book Now"
+	},
     "order": {
         "title": "My Orders",
 		"re_order": "Re Order",

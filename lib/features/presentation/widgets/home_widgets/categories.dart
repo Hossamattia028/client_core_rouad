@@ -40,52 +40,46 @@ class HomeCategories extends StatelessWidget {
         const SizedBox(
           height: 10,
         ),
-        Stack(
-          alignment: Alignment.center,
-          children: [
-            SizedBox(
-              height: 85.h,
-              width: double.infinity,
-              child: ListView.separated(
-                itemCount: 10,
-                physics: const BouncingScrollPhysics(),
-                shrinkWrap: true,
-                scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index) {
-                  return GestureDetector(
-                    onTap: () {},
-                    child: Container(
-                      padding: EdgeInsets.symmetric(vertical: 10.h, horizontal: 12.w),
-                      decoration: BoxDecoration(
-                          color: kBackGround.withOpacity(0.05),
-                          borderRadius: BorderRadius.circular(15),
-                      ),
-                      child: Column(
-                        children: [
-                          CircleAvatar(
-                            backgroundColor: Colors.white,
-                            radius: 17.w,
-                            backgroundImage: const NetworkImage(Constants.img),
-                          ),
-                          const SizedBox(height: 10,),
-                          CustomText(
-                              text: "Categories $index",
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold,
-                              fontSize: AppStyle.verySmall.sp),
-                        ],
-                      ),
+        SizedBox(
+            height: 85.h,
+            width: double.infinity,
+            child: ListView.separated(
+              itemCount: 10,
+              physics: const BouncingScrollPhysics(),
+              shrinkWrap: true,
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context, index) {
+                return GestureDetector(
+                  onTap: () {},
+                  child: Container(
+                    padding: EdgeInsets.symmetric(vertical: 10.h, horizontal: 12.w),
+                    decoration: BoxDecoration(
+                      color: kBackGround.withOpacity(0.05),
+                      borderRadius: BorderRadius.circular(15),
                     ),
-                  );
-                },
-                separatorBuilder: (BuildContext context, int index) =>
-                const SizedBox(
-                  width: 20,
-                ),
-              )
-            ),
-
-          ],
+                    child: Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: Colors.white,
+                          radius: 17.w,
+                          backgroundImage: const NetworkImage(Constants.img),
+                        ),
+                        const SizedBox(height: 10,),
+                        CustomText(
+                            text: "Categories $index",
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontSize: AppStyle.verySmall.sp),
+                      ],
+                    ),
+                  ),
+                );
+              },
+              separatorBuilder: (BuildContext context, int index) =>
+              const SizedBox(
+                width: 20,
+              ),
+            )
         ),
       ],
     );

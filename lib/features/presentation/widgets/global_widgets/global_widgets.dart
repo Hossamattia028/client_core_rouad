@@ -2,6 +2,7 @@
 
 import 'package:client_core/core/styles/color.dart';
 import 'package:client_core/core/styles/my_fonts.dart';
+import 'package:client_core/core/util/hive_boxes.dart';
 import 'package:client_core/features/presentation/widgets/global_widgets/custom_text.dart';
 import 'package:client_core/core/util/app_style.dart';
 import 'package:flutter/material.dart';
@@ -78,11 +79,20 @@ class GlobalWidgets{
         onPressed: fn,
         alignment: alignment,
         padding: const EdgeInsets.only(right: 5,left: 5),
-        icon: Icon(
-          Icons.arrow_back_ios,
-          color: color,
-          size: 22.w,
-        ),
+        icon: Container(
+          alignment: Alignment.center,
+          height: 30.h,
+          width: 28.w,
+          decoration: const BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.all(Radius.circular(10))
+          ),
+          child: Icon(
+            Icons.arrow_back,
+            color: color,
+            size: 22.w,
+          ),
+        )
       ),
     );
   }

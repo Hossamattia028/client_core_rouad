@@ -14,4 +14,6 @@ class AppStyle {
 
 
   static const double paddingFromTop = 40;
+  static const double paddingFromH = 10;
+  static const double paddingFromV = 10;
 }

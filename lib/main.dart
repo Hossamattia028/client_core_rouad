@@ -11,6 +11,7 @@ import 'package:client_core/features/presentation/screens/auth/verification_code
 import 'package:client_core/features/presentation/screens/home/home_screen.dart';
 import 'package:client_core/features/presentation/screens/maps/set_and_get_coordinates.dart';
 import 'package:client_core/features/presentation/screens/notifications/allow_notification.dart';
+import 'package:client_core/features/presentation/screens/service/service_details.dart';
 import 'package:client_core/features/presentation/widgets/global_widgets/error_widget.dart';
 import 'package:client_core/splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -87,7 +88,7 @@ class MyApp extends StatelessWidget {
                 return widget!;
               },
               title: 'Client Core',
-              home: const HomeScreen()
+              home: const ServiceDetailsScreen()
               // home: isRoot==false ? const RootScreen() : const SplashScreen(),
             ),
           ),
