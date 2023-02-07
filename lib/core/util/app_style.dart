@@ -13,7 +13,7 @@ class AppStyle {
   static const double veryLarge = 25;
 
 
-  static const double paddingFromTop = 40;
-  static const double paddingFromH = 10;
+  static const double paddingFromTop = 22;
+  static const double paddingFromH = 12;
   static const double paddingFromV = 10;
 }

@@ -25,7 +25,7 @@ class ServiceDetailsScreen extends StatelessWidget {
           color: Colors.white,
           fontSize: AppStyle.small.sp,
         ),
-        leading: GlobalWidgets.backArrowButton(() {}, kPrimary, Alignment.center),
+        leading: BackArrowButton(color: kPrimary,alignment: Alignment.center,fn:()=> Navigator.of(context).pop(),),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

@@ -2,7 +2,7 @@ import 'package:client_core/core/styles/color.dart';
 import 'package:client_core/core/styles/constants.dart';
 import 'package:client_core/core/util/app_style.dart';
 import 'package:client_core/features/presentation/widgets/global_widgets/custom_text.dart';
-import 'package:client_core/features/presentation/widgets/order_widgets/order_card.dart';
+import 'package:client_core/features/presentation/widgets/order_widgets/order_home_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_translate/flutter_translate.dart';

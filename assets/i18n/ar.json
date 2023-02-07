@@ -22,6 +22,8 @@
     },
     "button": {
       "cancel": "إلغاء",
+      "remove": "حذف",
+      "edit": "تعديل",
       "ok": "تأكيد",
       "VERIFY": "تحقق",
       "save": "حفظ",
@@ -176,9 +178,16 @@
     },
 
     "profile": {
+      "change_profile_image": "تغير الصورة الشخصية",
+      "view": "عرض الملف الشخصي",
+      "locations": "مواقعي",
+      "deals": "الاتفاقات",
+      "my_details": "بياناتي",
       "offline": "غير متاح",
       "online": "متاح",
       "name": "الاسم",
+      "first_name": "الاسم الاول",
+      "last_name": "اسم العائلة",
       "email": "البريد الالكتروني",
       "gender": "النوع",
       "male": "ذكر",
@@ -192,6 +201,7 @@
       "address": "العنوان",
       "age": "العمر",
       "my_account": "حسابي",
+      "changes": "التغيرات",
       "edit": "تعديل الحساب",
       "edit_bank_details": "تعديل بيانات الحساب البنكي",
       "bank_name": "اسم البنك",
@@ -425,6 +435,7 @@
       "delivery_offers": "عروض التوصيل",
       "offers": "جميع العروض",
       "send_request": "ارسل طلب",
+      "order_now": "اطلب الآن",
       "reports": "تقارير",
       "date": "بتاريخ",
       "order_prepared_action": "تاكيد تحضير الطلب",
@@ -446,9 +457,10 @@
       "completed": "منتهي",
       "track_location": "تتبع الطلب",
       "may_track_location": " بالإمكان تتبع الطلب",
-      "admin_tax": "يوكوك",
+      "admin_tax": "",
       "payed_by_admin": "المدفوع",
-      "still": "المتبقي"
+      "still": "المتبقي",
+      "rate": "تقييم الطلب"
     },
     "language": {
       "name": {

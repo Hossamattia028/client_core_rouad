@@ -24,9 +24,9 @@ class UserService extends Equatable {
     required this.area,
     required this.address,
     required this.countryCode,
-    required this.bankAccountDetails,
-    required this.status,
-    required this.isApproved,
+    this.bankAccountDetails,
+    this.status,
+    this.isApproved,
   });
 
   @override

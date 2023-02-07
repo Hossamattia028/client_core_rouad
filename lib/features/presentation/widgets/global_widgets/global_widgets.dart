@@ -15,7 +15,9 @@ class GlobalAppBar extends StatelessWidget implements PreferredSizeWidget {
   final bool onlyTitle;
   final Widget? icon;
   final Widget? leadingIcon;
-  const GlobalAppBar({Key? key,required this.title,required this.backGroundColor,this.icon,this.leadingIcon,this.onlyTitle=false}) : super(key: key);
+  final double height;
+  final Color backIconColor;
+  const GlobalAppBar({Key? key,required this.title,required this.backGroundColor,this.icon,this.leadingIcon,this.onlyTitle=false,this.height=45,this.backIconColor=kPrimary}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -33,11 +35,11 @@ class GlobalAppBar extends StatelessWidget implements PreferredSizeWidget {
                 children: [
                   Row(
                     children: [
-                      leadingIcon ?? GlobalWidgets.backArrowButton(()=> Navigator.of(context).pop(), Colors.white,Alignment.center),
+                      leadingIcon ?? BackArrowButton(color: backIconColor,alignment: Alignment.center,fn:()=> Navigator.of(context).pop(),),
                       CustomText(
                           text: title,
-                          color: Colors.white,
-                          fontWeight: FontWeight.w600,
+                          color: kPrimary,
+                          fontWeight: FontWeight.w500,
                           fontFamily: primaryFont,
                           fontSize: AppStyle.average.sp),
                     ],
@@ -50,7 +52,7 @@ class GlobalAppBar extends StatelessWidget implements PreferredSizeWidget {
         ));
   }
   @override
-  Size get preferredSize => Size.fromHeight(42.h);
+  Size get preferredSize => Size.fromHeight(height.h);
 }
 
 class ChatPersonIcon extends StatelessWidget {
@@ -71,32 +73,39 @@ class ChatPersonIcon extends StatelessWidget {
   }
 }
 
+class BackArrowButton extends StatelessWidget {
+  final VoidCallback fn;
+  final Color color;
+  final Alignment alignment;
+  const BackArrowButton({Key? key,required this.alignment,required this.color,required this.fn}) : super(key: key);
 
-class GlobalWidgets{
-  static Widget backArrowButton(VoidCallback fn,Color color,Alignment alignment){
+  @override
+  Widget build(BuildContext context) {
     return Ink(
       child: IconButton(
-        onPressed: fn,
-        alignment: alignment,
-        padding: const EdgeInsets.only(right: 5,left: 5),
-        icon: Container(
-          alignment: Alignment.center,
-          height: 30.h,
-          width: 28.w,
-          decoration: const BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.all(Radius.circular(10))
-          ),
-          child: Icon(
-            Icons.arrow_back,
-            color: color,
-            size: 22.w,
-          ),
-        )
+          onPressed: fn,
+          alignment: alignment,
+          padding: EdgeInsets.symmetric(horizontal: 6.w),
+          icon: Container(
+            alignment: Alignment.center,
+            height: 30.h,
+            width: 28.w,
+            decoration: const BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.all(Radius.circular(10))
+            ),
+            child: Icon(
+              Icons.arrow_back,
+              color: color,
+              size: 22.w,
+            ),
+          )
       ),
     );
   }
 }
+
+
 
 class GlobalAppBarLogo extends StatelessWidget {
   final bool isWhite;
@@ -115,7 +124,7 @@ class GlobalAppBarLogo extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              GlobalWidgets.backArrowButton( backIconFn, isWhite?Colors.white:kText2,Alignment.center),
+              BackArrowButton(color: Colors.white,alignment: Alignment.center,fn:()=> backIconFn,),
               Expanded(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
