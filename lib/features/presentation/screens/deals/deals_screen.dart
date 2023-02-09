@@ -1,4 +1,5 @@
 import 'package:client_core/core/styles/color.dart';
+import 'package:client_core/core/styles/my_fonts.dart';
 import 'package:client_core/core/util/app_style.dart';
 import 'package:client_core/features/presentation/widgets/deals_widgets/deals_service_list.dart';
 import 'package:client_core/features/presentation/widgets/global_widgets/custom_text.dart';
@@ -71,24 +72,9 @@ class _DealsScreenState extends State<DealsScreen> with SingleTickerProviderStat
                     ),
                     unselectedLabelColor: kPrimary,
                     tabs: [
-                      CustomText(
-                        text: "service name",
-                        color: tabController.index == 0?Colors.white:kPrimary,
-                        fontSize: AppStyle.small.sp,
-                        fontWeight: FontWeight.w400,
-                      ),
-                      CustomText(
-                        text: "service name",
-                        color:tabController.index == 1?Colors.white:kPrimary,
-                        fontSize: AppStyle.small.sp,
-                        fontWeight: FontWeight.w400,
-                      ),
-                      CustomText(
-                        text: "service name",
-                        color:tabController.index ==2 ?Colors.white:kPrimary,
-                        fontSize: AppStyle.small.sp,
-                        fontWeight: FontWeight.w400,
-                      ),
+                      Text("service name",style: TextStyle(fontSize: AppStyle.small.sp,fontWeight: FontWeight.w400,fontFamily: primaryFont),),
+                      Text("service name",style: TextStyle(fontSize: AppStyle.small.sp,fontWeight: FontWeight.w400,fontFamily: primaryFont),),
+                      Text("service name",style: TextStyle(fontSize: AppStyle.small.sp,fontWeight: FontWeight.w400,fontFamily: primaryFont),),
                     ],
                   ),
                 ),
