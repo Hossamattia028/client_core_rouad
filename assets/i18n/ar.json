@@ -260,6 +260,11 @@
       "your_current_location": "موقعك الحالي",
       "confirm_current_location":"تاكيد الموقع"
     },
+    "wallet": {
+      "top_up": "شحن",
+      "manage": "ادارة",
+      "transactions_empty": "لا يوجد عمليات حتي الآن قم بشحن محفظتك وابدا بتنفيذ طلباتك"
+    },
     "wishlist": {
         "title": "المفضلة",
         "empty": "المفضلة فارغة الان"

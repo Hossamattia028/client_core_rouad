@@ -19,6 +19,7 @@ import 'package:client_core/features/presentation/screens/notifications/allow_no
 import 'package:client_core/features/presentation/screens/notifications/notifications_screen.dart';
 import 'package:client_core/features/presentation/screens/order/order_screen.dart';
 import 'package:client_core/features/presentation/screens/service/service_details.dart';
+import 'package:client_core/features/presentation/screens/wallet/wallet_screen.dart';
 import 'package:client_core/features/presentation/widgets/global_widgets/error_widget.dart';
 import 'package:client_core/splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -95,7 +96,7 @@ class MyApp extends StatelessWidget {
                 return widget!;
               },
               title: 'Client Core',
-              home: const DealsScreen()
+              home: const ServiceDetailsScreen()
               // home: isRoot==false ? const RootScreen() : const SplashScreen(),
             ),
           ),

@@ -24,6 +24,7 @@ class ServiceDetailsScreen extends StatelessWidget {
           text: "Service name",
           color: Colors.white,
           fontSize: AppStyle.small.sp,
+          fontWeight: FontWeight.w500,
         ),
         leading: BackArrowButton(color: kPrimary,alignment: Alignment.center,fn:()=> Navigator.of(context).pop(),),
       ),

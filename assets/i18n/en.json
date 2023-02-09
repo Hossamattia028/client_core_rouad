@@ -370,6 +370,11 @@
 		"your_current_location": "Your Current Location",
 		"confirm_current_location":"Confirm the location"
 	},
+	"wallet": {
+		"top_up": "Top Up",
+		"manage": "Manage",
+		"transactions_empty": "No transactions yet top up your credit and start ordering"
+	},
     "wishlist": {
         "title": "Wishlist",
         "empty": "it is empty here"
