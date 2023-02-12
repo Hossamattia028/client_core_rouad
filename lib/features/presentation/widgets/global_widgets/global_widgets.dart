@@ -17,7 +17,8 @@ class GlobalAppBar extends StatelessWidget implements PreferredSizeWidget {
   final Widget? leadingIcon;
   final double height;
   final Color backIconColor;
-  const GlobalAppBar({Key? key,required this.title,required this.backGroundColor,this.icon,this.leadingIcon,this.onlyTitle=false,this.height=45,this.backIconColor=kPrimary}) : super(key: key);
+  final Color textColor;
+  const GlobalAppBar({Key? key,required this.title,required this.backGroundColor,this.icon,this.leadingIcon,this.onlyTitle=false,this.height=45,this.backIconColor=kPrimary,this.textColor=kPrimary}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +39,7 @@ class GlobalAppBar extends StatelessWidget implements PreferredSizeWidget {
                       leadingIcon ?? BackArrowButton(color: backIconColor,alignment: Alignment.center,fn:()=> Navigator.of(context).pop(),),
                       CustomText(
                           text: title,
-                          color: kPrimary,
+                          color: textColor,
                           fontWeight: FontWeight.w500,
                           fontFamily: primaryFont,
                           fontSize: AppStyle.average.sp),

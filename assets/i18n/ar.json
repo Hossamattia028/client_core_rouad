@@ -174,7 +174,11 @@
       "Request_quotation": "طلب اقتباس",
       "sell_with_us": "البيع معنا",
       "Rating_FeedBack": "التقييم او النقد",
-      "would_leave_comment": "هل تمانع في ترك مراجعة وإعلامنا بما تريد .."
+      "would_leave_comment": "هل تمانع في ترك مراجعة وإعلامنا بما تريد ..",
+      "what_rating": "ما هو تقييمك؟",
+      "your_feedback_improve": "ستساعد ملاحظاتك في تحسين خدماتنا",
+      "additional_comments": "تعليقات اضافية...",
+      "submit_review": "إرسال التقييم"
     },
 
     "profile": {

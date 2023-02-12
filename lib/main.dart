@@ -7,6 +7,7 @@ import 'package:client_core/core/util/set_notification.dart';
 import 'package:client_core/features/presentation/blocs/auth_bloc/auth_bloc.dart';
 import 'package:client_core/features/presentation/screens/account/account_screen.dart';
 import 'package:client_core/features/presentation/screens/account/edit_profile_screen.dart';
+import 'package:client_core/features/presentation/screens/account/profile_screen.dart';
 import 'package:client_core/features/presentation/screens/auth/login.dart';
 import 'package:client_core/features/presentation/screens/auth/register.dart';
 import 'package:client_core/features/presentation/screens/auth/verification_code.dart';
@@ -18,6 +19,7 @@ import 'package:client_core/features/presentation/screens/maps/set_and_get_coord
 import 'package:client_core/features/presentation/screens/notifications/allow_notification.dart';
 import 'package:client_core/features/presentation/screens/notifications/notifications_screen.dart';
 import 'package:client_core/features/presentation/screens/order/order_screen.dart';
+import 'package:client_core/features/presentation/screens/rating/rating_screen.dart';
 import 'package:client_core/features/presentation/screens/service/service_details.dart';
 import 'package:client_core/features/presentation/screens/wallet/wallet_screen.dart';
 import 'package:client_core/features/presentation/widgets/global_widgets/error_widget.dart';
@@ -96,7 +98,7 @@ class MyApp extends StatelessWidget {
                 return widget!;
               },
               title: 'Client Core',
-              home: const ServiceDetailsScreen()
+              home: const RatingScreen()
               // home: isRoot==false ? const RootScreen() : const SplashScreen(),
             ),
           ),

@@ -174,7 +174,11 @@
 		"Request_quotation": "Request Quotation",
 		"sell_with_us": "Sell with Us",
 		"Rating_FeedBack": "Rating & FeedBack",
-		"would_leave_comment": "Would you mind leaving a review and let us know what you .."
+		"would_leave_comment": "Would you mind leaving a review and let us know what you ..",
+		"what_rating": "What is your rating?",
+		"your_feedback_improve": "Your feedback will help improve our services",
+		"additional_comments": "Additional comments...",
+		"submit_review": "Submit Review"
 	},
     "home": {
 		"home": "Home Page",

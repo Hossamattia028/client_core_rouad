@@ -20,6 +20,7 @@ class CustomTextFromField extends StatelessWidget {
   bool? smallPadding;
   bool? hasBorder;
   Color? cursorColor;
+  Color? backGround;
   int? maxLines;
   Function? onChanged;
   VoidCallback? onTap;
@@ -37,6 +38,7 @@ class CustomTextFromField extends StatelessWidget {
     this.smallPadding,
     this.hasBorder,
     this.cursorColor,
+    this.backGround,
     this.maxLines,
     required this.onChanged,
     this.onTap,
@@ -59,7 +61,8 @@ class CustomTextFromField extends StatelessWidget {
         color: Colors.black,
       ),
       decoration: InputDecoration(
-        // filled: true,
+        filled: backGround!=null?true:false,
+        fillColor: backGround??Colors.transparent,
         contentPadding: smallPadding==true?
         const EdgeInsets.symmetric(vertical: 4,horizontal: 1):null,
         floatingLabelBehavior: FloatingLabelBehavior.always,
