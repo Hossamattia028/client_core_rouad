@@ -12,7 +12,7 @@ class AccountScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kText1,
+      backgroundColor: Colors.grey.shade400,
       body: SingleChildScrollView(
         padding: EdgeInsets.symmetric(vertical: AppStyle.paddingFromV.h+20,horizontal: AppStyle.paddingFromH.w),
         physics: const BouncingScrollPhysics(),
