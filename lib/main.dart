@@ -11,6 +11,7 @@ import 'package:client_core/features/presentation/screens/account/profile_screen
 import 'package:client_core/features/presentation/screens/auth/login.dart';
 import 'package:client_core/features/presentation/screens/auth/register.dart';
 import 'package:client_core/features/presentation/screens/auth/verification_code.dart';
+import 'package:client_core/features/presentation/screens/check_out/check_out_screen.dart';
 import 'package:client_core/features/presentation/screens/contact_us/contact_us_screen.dart';
 import 'package:client_core/features/presentation/screens/deals/deals_screen.dart';
 import 'package:client_core/features/presentation/screens/favourite/favourite_screen.dart';
@@ -100,7 +101,7 @@ class MyApp extends StatelessWidget {
                 return widget!;
               },
               title: 'Client Core',
-              home: const InvoiceScreen()
+              home: const CheckOutScreen()
               // home: isRoot==false ? const RootScreen() : const SplashScreen(),
             ),
           ),

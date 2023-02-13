@@ -26,7 +26,11 @@ class AllowNotificationScreen extends StatelessWidget {
                 bottomLeft: Radius.circular(30)
               ),
             ),
-            child:  GlobalAppBarLogo(isWhite: true,padding: const EdgeInsets.symmetric(horizontal: 20),backIconFn: ()=>Navigator.of(context).pop(),),
+            child:  GlobalAppBar(
+              title: translate("profile.wishlist"),
+              backGroundColor: Colors.grey.shade100,
+              height: 75,
+            ),
           ),
           Container(
             height: 250.h,

@@ -108,39 +108,3 @@ class BackArrowButton extends StatelessWidget {
 
 
 
-class GlobalAppBarLogo extends StatelessWidget {
-  final bool isWhite;
-  final EdgeInsets? padding;
-  final VoidCallback backIconFn;
-  const GlobalAppBarLogo({Key? key,required this.isWhite,this.padding=EdgeInsets.zero,required this.backIconFn}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: padding!,
-      child: Column(
-        children: [
-          SizedBox(height: AppStyle.paddingFromTop.h,),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              BackArrowButton(color: Colors.white,alignment: Alignment.center,fn:()=> backIconFn,),
-              Expanded(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    // Image.asset(isWhite?AppImages.whiteLogo:AppImages.logo,height: 55.h,alignment: Alignment.center,),
-                    SizedBox(width: 25.w,),
-                  ],
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 30,),
-        ],
-      ),
-    );
-  }
-}
-

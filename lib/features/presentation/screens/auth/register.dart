@@ -34,7 +34,11 @@ class RegisterScreen extends StatelessWidget {
         height: double.infinity,
         child: Column(
           children: [
-            GlobalAppBarLogo(isWhite: true,padding: const EdgeInsets.symmetric(horizontal: 20),backIconFn: ()=>Navigator.of(context).pop(),),
+            GlobalAppBar(
+              title: "",
+              backGroundColor: Colors.grey.shade100,
+              height: 75,
+            ),
             Expanded(
               child: Container(
                   padding: const EdgeInsets.symmetric(

@@ -58,10 +58,10 @@ class _PinCodeVerificationScreenState extends State<PinCodeVerificationScreen> {
         body: Container(
             child: Column(
           children: [
-            GlobalAppBarLogo(
-              isWhite: true,
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              backIconFn: () => Navigator.of(context).pop(),
+            GlobalAppBar(
+              title: "",
+              backGroundColor: Colors.grey.shade100,
+              height: 75,
             ),
             Expanded(
               child: Container(

@@ -33,7 +33,8 @@
       "previous": "السابق",
       "update": "تحديث",
       "select": "تحديد",
-      "no": "لا"
+      "no": "لا",
+      "submit": "تنفيذ"
     },
     "toast": {
       "field_empty": "من فضلك قم بادخال جميع الحقول",
@@ -161,6 +162,7 @@
       "date": "تاريخ",
       "address": "العنوان"
     },
+
     "activity_setting": {
       "allow_display_over": "السماح لبرنامج appName للعرض فوق التطبيقات الأخرى",
       "order_when_online": "السماح لبرنامج appName للعرض فوق التطبيقات الأخرى ف الطلب لتلقي الطلبات عندما تكون متصلاً بالإنترنت",
@@ -303,7 +305,15 @@
       "coupon": "آضف كوبون خصم",
       "active_coupon": "تفعيل الكوبون",
       "couponـwrong": "يرجي التحقق من الكوبون",
-      "coupon_activated": "تم تفعيل كوبون الخصم ✔"
+      "coupon_activated": "تم تفعيل كوبون الخصم ✔",
+      "place_order": "تنفيذ الطلب",
+      "payment_summery": "تفاصيل الدفع",
+      "service_fee": "رسوم الخدمة",
+      "delivery_fee":"تكلفة التوصيل",
+      "basket_total": "تكلفة السلة",
+      "save_on_your_order": "وفر على طلبك",
+      "enter_voucher_code": "أدخل رمز الكوبون",
+      "have_read_payment_terms": "لقد قرأت شروط الدفع ، أوافق"
     },
     "home": {
       "save": "وفر",

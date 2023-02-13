@@ -32,7 +32,8 @@
 		"previous": "Previous",
 		"update": "Update",
 		"select": "select",
-		"no": "No"
+		"no": "No",
+		"submit": "Submit"
 	},
 	"toast": {
 		"field_empty": "please enter all fields",
@@ -400,7 +401,7 @@
 		"complete_pay": "Complete the purchase",
 		"delivery_address": "Delivery Address",
 		"cash_on_delivery": "Cash on delivery",
-		"online_payment": "Payment Online",
+		"online_payment": "Credit Card",
 		"on_develop": "on develop",
 		"delivery_cost": "Shipping Cost",
 		"products_price": "Price of products",
@@ -412,7 +413,15 @@
 		"coupon": "Add Coupon",
 		"active_coupon": "Discount",
 		"couponـwrong": "Please re check the coupon (wrong)",
-		"coupon_activated": "Coupon Discount activated ✔"
+		"coupon_activated": "Coupon Discount activated ✔",
+		"place_order": "Place Order",
+		"payment_summery": "Payment Summery",
+		"service_fee": "Service Fee",
+		"delivery_fee":"Delivery Fee",
+		"basket_total": "Basket Total",
+		"save_on_your_order": "Save on your order",
+		"enter_voucher_code": "Enter Voucher Code",
+		"have_read_payment_terms": "I have read the terms of payments,i agree"
 	},
 	"service": {
 		"book_now": "Book Now"
