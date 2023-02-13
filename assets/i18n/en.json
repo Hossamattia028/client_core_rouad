@@ -454,6 +454,8 @@
 		"order_now": "Order Now",
 		"reports": "Reports",
 		"date": "on date",
+		"time": "Time",
+		"place": "Place",
 		"order_prepared_action": "Start prepare order",
 		"order_finished": "Order has been finished",
 		"order_details": "order details",

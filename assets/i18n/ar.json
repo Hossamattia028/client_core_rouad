@@ -466,6 +466,8 @@
       "order_now": "اطلب الآن",
       "reports": "تقارير",
       "date": "بتاريخ",
+      "time": "وقت الوصول",
+      "place": "موقع التسليم",
       "order_prepared_action": "تاكيد تحضير الطلب",
       "order_finished": "تم الانتهاء من تحضير الطلب",
       "order_details": "تفاصيل الطلب",

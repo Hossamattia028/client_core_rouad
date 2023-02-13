@@ -22,6 +22,7 @@ import 'package:client_core/features/presentation/screens/maps/set_and_get_coord
 import 'package:client_core/features/presentation/screens/notifications/allow_notification.dart';
 import 'package:client_core/features/presentation/screens/notifications/notifications_screen.dart';
 import 'package:client_core/features/presentation/screens/order/order_screen.dart';
+import 'package:client_core/features/presentation/screens/order/order_tracking.dart';
 import 'package:client_core/features/presentation/screens/rating/rating_screen.dart';
 import 'package:client_core/features/presentation/screens/service/service_details.dart';
 import 'package:client_core/features/presentation/screens/wallet/wallet_screen.dart';
@@ -101,7 +102,7 @@ class MyApp extends StatelessWidget {
                 return widget!;
               },
               title: 'Client Core',
-              home: const CheckOutScreen()
+              home: const OrderTrackingScreen()
               // home: isRoot==false ? const RootScreen() : const SplashScreen(),
             ),
           ),
