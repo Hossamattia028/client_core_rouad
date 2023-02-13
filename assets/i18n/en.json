@@ -151,7 +151,15 @@
 		"ads": "My Ads",
 		"personal_photo": "Personal photo"
 	},
-
+	"invoice": {
+		"thank_for_order": "Thank You For Your Order !",
+		"total": "TOTAL",
+		"discount": "Discount",
+		"vat": "Total VAT",
+		"order_id": "Order ID",
+		"date": "Date",
+		"address": "Address"
+	},
 	"activity_setting": {
 		"allow_display_over": "Allow appName Driver to display over Other apps",
 		"order_when_online": "Allow appName Driver to display over Other apps in Order to receive orders When you're online",

@@ -152,6 +152,15 @@
       "personal_photo": "صور شخصية"
     },
 
+    "invoice": {
+      "thank_for_order": "شكرا لطلبك",
+      "total": "المجموع الكلي",
+      "discount": "الخصم",
+      "vat": "الضريبة",
+      "order_id": "كود الطلب",
+      "date": "تاريخ",
+      "address": "العنوان"
+    },
     "activity_setting": {
       "allow_display_over": "السماح لبرنامج appName للعرض فوق التطبيقات الأخرى",
       "order_when_online": "السماح لبرنامج appName للعرض فوق التطبيقات الأخرى ف الطلب لتلقي الطلبات عندما تكون متصلاً بالإنترنت",
