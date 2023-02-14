@@ -315,6 +315,13 @@
       "enter_voucher_code": "أدخل رمز الكوبون",
       "have_read_payment_terms": "لقد قرأت شروط الدفع ، أوافق"
     },
+    "map": {
+      "add_location": "أضف موقع",
+      "work": "عمل",
+      "home": "منزل",
+      "other": "اخر",
+      "set_location": "اضف موقعك الآن"
+    },
     "home": {
       "save": "وفر",
       "buy": "اشتري",

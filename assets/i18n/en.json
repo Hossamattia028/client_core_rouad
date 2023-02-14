@@ -189,6 +189,13 @@
 		"additional_comments": "Additional comments...",
 		"submit_review": "Submit Review"
 	},
+	"map": {
+		"add_location": "Add Location",
+		"work": "Work",
+		"home": "Home",
+		"other": "Other",
+		"set_location": "Set Your Location"
+	},
     "home": {
 		"home": "Home Page",
 		"save": "Save",
