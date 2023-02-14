@@ -61,8 +61,8 @@ class CustomTextFromField extends StatelessWidget {
         color: Colors.black,
       ),
       decoration: InputDecoration(
-        filled: backGround!=null?true:false,
-        fillColor: backGround??Colors.transparent,
+        filled: backGround!=null ? true : false,
+        fillColor: backGround ?? Colors.transparent,
         contentPadding: smallPadding==true?
         const EdgeInsets.symmetric(vertical: 4,horizontal: 1):null,
         floatingLabelBehavior: FloatingLabelBehavior.always,

@@ -18,6 +18,7 @@ import 'package:client_core/features/presentation/screens/favourite/favourite_sc
 import 'package:client_core/features/presentation/screens/home/home_screen.dart';
 import 'package:client_core/features/presentation/screens/invoice/invoice_screen.dart';
 import 'package:client_core/features/presentation/screens/locations/my_locations.dart';
+import 'package:client_core/features/presentation/screens/maps/add_location.dart';
 import 'package:client_core/features/presentation/screens/maps/set_and_get_coordinates.dart';
 import 'package:client_core/features/presentation/screens/notifications/allow_notification.dart';
 import 'package:client_core/features/presentation/screens/notifications/notifications_screen.dart';
@@ -102,7 +103,7 @@ class MyApp extends StatelessWidget {
                 return widget!;
               },
               title: 'Client Core',
-              home: const OrderTrackingScreen()
+              home: const AddLocationScreen()
               // home: isRoot==false ? const RootScreen() : const SplashScreen(),
             ),
           ),

@@ -15,38 +15,40 @@ class AddLocationCard extends StatelessWidget {
     return InkWell(
       onTap: ()=> onTap,
       child: Stack(
-        alignment: Alignment.center,
+        alignment: Alignment.topCenter,
         children: [
+
           Container(
-            padding: EdgeInsets.all(10),
-            decoration: const BoxDecoration(
-              color: Colors.black,
-              borderRadius: BorderRadius.all(Radius.circular(15))
-            ),
-            child: const Icon(Icons.add,color: Colors.white,),
-          ),
-          Container(
-            padding: const EdgeInsets.all(10),
-            margin: EdgeInsets.only(top: 20.h),
-            decoration: const BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(15)),
-              color: kText1,
+            margin: const EdgeInsets.only(top: 35),
+            padding: EdgeInsets.symmetric(horizontal: 3.w,vertical: 15.h),
+            decoration:  BoxDecoration(
+              borderRadius: const BorderRadius.all(Radius.circular(10)),
+              color: Colors.grey.shade200,
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 CustomText(
                   text: title,
-                  fontSize: AppStyle.average.sp,
+                  fontSize: AppStyle.small.sp,
                   color: Colors.black,
+                  fontWeight: FontWeight.w500,
                 ),
                 CustomText(
                   text: translate("map.set_location"),
-                  fontSize: AppStyle.small.sp,
+                  fontSize: AppStyle.verySmall.sp - 1,
                   color: kText1,
                 ),
               ],
             ),
+          ),
+          Container(
+            padding: const EdgeInsets.all(10),
+            decoration: const BoxDecoration(
+                color: Colors.black,
+                borderRadius: BorderRadius.all(Radius.circular(10))
+            ),
+            child: const Icon(Icons.add,color: Colors.white,),
           ),
 
         ],
